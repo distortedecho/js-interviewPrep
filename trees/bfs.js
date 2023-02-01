@@ -93,7 +93,7 @@ class Bst{
         var data = []
         function traverse(node){
             if(node.left) traverse(node.left)
-            data.push(node)
+            data.push(node.val)
             if(node.right) traverse(node.right)
         }
         traverse(this.root)
@@ -106,4 +106,4 @@ bst.insert(2)
 bst.insert(5)
 bst.insert(1)
 // bst.find(2)
-console.log(bst.DFSPostorder())
+console.log(bst.DFSInorder())
